@@ -10,9 +10,6 @@ female_actors=0
 gender_problem =[]
 
 for i in range(actors.shape[0]):
-    if actors.iloc[i][2] != 'M':
-        if actors.iloc[i][2] != 'F':
-            gender_problem.append(actors.iloc[i])
     if actors.iloc[i][2] == 'M':
         male_actors += 1
     if actors.iloc[i][2] == 'F':
